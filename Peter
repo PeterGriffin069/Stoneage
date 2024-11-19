@@ -1,0 +1,172 @@
+Here’s a simple HTML and CSS template for your clothing brand website "Stonage." This design is responsive and can be customized to meet your needs.
+
+
+---
+
+HTML (index.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stonage Clothing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Stonage</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Welcome to Stonage</h2>
+      <p>Unleash Your Style with Modern Apparel</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Stonage, we redefine fashion with timeless designs and sustainable materials. Join us in making a statement for a better world.</p>
+  </section>
+
+  <section id="shop">
+    <h2>Shop Our Collection</h2>
+    <div class="products">
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Classic Tee</h3>
+        <p>$25.00</p>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Denim Jacket</h3>
+        <p>$75.00</p>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Urban Hoodie</h3>
+        <p>$50.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@stonage.com</p>
+    <p>Phone: +123-456-7890</p>
+  </section>
+
+  <footer>
+    <p>© 2024 Stonage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+---
+
+CSS (styles.css)
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  background: #f4b400;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
